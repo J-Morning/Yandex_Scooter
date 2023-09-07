@@ -11,6 +11,7 @@ def create_new_order_get_track():
     return response.json()["track"]
 
 #Проверка на получение заказа по треку со статусом 200 в ответе
+#Юлия Ситранова, 8-я когорта — Финальный проект. Инженер по тестированию плюс
 def test_order():
     track = create_new_order_get_track()
     response = sender_stand_request.get_order(track)
